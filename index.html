@@ -42,7 +42,8 @@
             clientes e servidores. Cada vez que você acessa um site ou interage com uma API,
             você está enviando uma requisição HTTP para um servidor e recebendo uma resposta.
             O HTTP utiliza métodos como GET, POST, PUT e DELETE para diferentes tipos de operações
-            na web.
+            na web. A versão mais recente, HTTP/2, oferece melhorias de desempenho e eficiência
+            sobre a versão anterior, HTTP/1.1.
         </p>
 
         <h3>APIs com Node.js</h3>
@@ -60,19 +61,26 @@
                 acessados através das APIs.</li>
         </ul>
 
-        <h3>Demostração de Código</h3>
+        <h3>Exemplo de Código: app.js com Express</h3>
         <pre><code>
-// Exemplo de chamada AJAX com jQuery
-$.ajax({
-    url: 'https://api.example.com/data',
-    method: 'GET',
-    success: function(response) {
-        console.log('Dados recebidos:', response);
-    },
-    error: function(error) {
-        console.error('Erro:', error);
-    }
-});
+            // Importar o módulo express
+            const express = require('express');
+
+            // Criar uma instância do aplicativo express
+            const app = express();
+
+            // Definir uma rota para a raiz
+            app.get('/', (req, res) => {
+                res.json({ message: 'Olá, mundo!' });
+            });
+
+            // Configurar a porta do servidor
+            const PORT = process.env.PORT || 3000;
+
+            // Iniciar o servidor
+            app.listen(PORT, () => {
+                console.log(`Servidor rodando na porta ${PORT}`);
+            });
         </code></pre>
     </div>
 
