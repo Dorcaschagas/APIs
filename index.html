@@ -20,13 +20,16 @@
         code {
             font-size: 0.9em;
         }
+        .paragrafo{
+            text-align: justify;
+        }
     </style>
 </head>
 
 <body>
     <div class="container mt-4">
-        <h1>APIs</h1>
-        <p>
+        <h3 class="">APIs</h3>
+        <p class="paragrafo">
             APIs (Application Programming Interfaces) permitem que diferentes
             softwares interajam entre si. Elas fornecem um conjunto de regras e
             protocolos para que aplicativos possam comunicar e compartilhar dados.
@@ -35,8 +38,8 @@
             e frameworks como Node.js.
         </p>
 
-        <h3>O que é HTTP?</h3>
-        <p>
+        <h3 class="">O que é HTTP?</h3>
+        <p class="paragrafo">
             HTTP (Hypertext Transfer Protocol) é o protocolo de comunicação fundamental
             para a web. Ele define como as mensagens são formatadas e transmitidas entre
             clientes e servidores. Cada vez que você acessa um site ou interage com uma API,
@@ -46,10 +49,8 @@
             sobre a versão anterior, HTTP/1.1.
         </p>
 
-        <h3>APIs com Node.js</h3>
-        <p>
-            Eu trabalho com APIs utilizando as seguintes tecnologias:
-        </p>
+        <h3 class="">APIs com Node.js</h3>
+
         <ul>
             <li><strong>Node.js:</strong> Para criar e gerenciar servidores e rotas que manipulam
                 requisições e respostas de APIs.</li>
@@ -61,7 +62,49 @@
                 acessados através das APIs.</li>
         </ul>
 
-        <h3>Exemplo de Código: app.js com Express</h3>
+        <h3 class="">Exemplo de Código: app.js com Express</h3>
+        <pre><code>
+            // Importar o módulo express
+            const express = require('express');
+
+            // Criar uma instância do aplicativo express
+            const app = express();
+
+            // Definir uma rota para a raiz
+            app.get('/', (req, res) => {
+                res.json({ message: 'Olá, mundo!' });
+            });
+
+            // Configurar a porta do servidor
+            const PORT = process.env.PORT || 3000;
+
+            // Iniciar o servidor
+            app.listen(PORT, () => {
+                console.log(`Servidor rodando na porta ${PORT}`);
+            });
+        </code></pre>
+        <h3 class="">Exemplo de Código: app.js com Express</h3>
+        <pre><code>
+            // Importar o módulo express
+            const express = require('express');
+
+            // Criar uma instância do aplicativo express
+            const app = express();
+
+            // Definir uma rota para a raiz
+            app.get('/', (req, res) => {
+                res.json({ message: 'Olá, mundo!' });
+            });
+
+            // Configurar a porta do servidor
+            const PORT = process.env.PORT || 3000;
+
+            // Iniciar o servidor
+            app.listen(PORT, () => {
+                console.log(`Servidor rodando na porta ${PORT}`);
+            });
+        </code></pre>
+        <h3 class="">Exemplo de Código: app.js com Express</h3>
         <pre><code>
             // Importar o módulo express
             const express = require('express');
