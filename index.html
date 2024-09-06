@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+    <style>
+        pre {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        code {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1>APIs</h1>
+        <p>
+            APIs (Application Programming Interfaces) permitem que diferentes
+            softwares interajam entre si. Elas fornecem um conjunto de regras e
+            protocolos para que aplicativos possam comunicar e compartilhar dados.
+            No desenvolvimento web, APIs são essenciais para criar aplicações
+            dinâmicas e integradas, especialmente quando se utiliza bancos de dados
+            e frameworks como Node.js.
+        </p>
+
+        <h3>O que é HTTP?</h3>
+        <p>
+            HTTP (Hypertext Transfer Protocol) é o protocolo de comunicação fundamental
+            para a web. Ele define como as mensagens são formatadas e transmitidas entre
+            clientes e servidores. Cada vez que você acessa um site ou interage com uma API,
+            você está enviando uma requisição HTTP para um servidor e recebendo uma resposta.
+            O HTTP utiliza métodos como GET, POST, PUT e DELETE para diferentes tipos de operações
+            na web.
+        </p>
+
+        <h3>APIs com Node.js</h3>
+        <p>
+            Eu trabalho com APIs utilizando as seguintes tecnologias:
+        </p>
+        <ul>
+            <li><strong>Node.js:</strong> Para criar e gerenciar servidores e rotas que manipulam
+                requisições e respostas de APIs.</li>
+            <li><strong>JavaScript:</strong> Para fazer chamadas e processar respostas de APIs no
+                frontend.</li>
+            <li><strong>AJAX:</strong> Para realizar requisições assíncronas e atualizar o conteúdo da
+                página sem recarregar.</li>
+            <li><strong>PostgreSQL e MySQL:</strong> Para gerenciar e consultar bancos de dados que são
+                acessados através das APIs.</li>
+        </ul>
+
+        <h3>Demostração de Código</h3>
+        <pre><code>
+// Exemplo de chamada AJAX com jQuery
+$.ajax({
+    url: 'https://api.example.com/data',
+    method: 'GET',
+    success: function(response) {
+        console.log('Dados recebidos:', response);
+    },
+    error: function(error) {
+        console.error('Erro:', error);
+    }
+});
+        </code></pre>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
